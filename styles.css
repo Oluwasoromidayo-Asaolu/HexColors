@@ -1,0 +1,51 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    height: 100vh;
+}
+.contained{
+    text-align: center;
+}
+.contained h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+    animation: changeColor 5s  infinite alternate;
+}
+.contained h2{
+    font-size: 2rem;
+    margin-top: 50px;
+}
+@keyframes changeColor {
+    0%{
+        color: blue;
+    }
+    20%{
+        color: purple;
+    }
+    40%{
+        color: green;
+    }
+    60%{
+        color: orange;
+    }
+    80%{
+        color: red;
+    }
+    100%{
+        color: violet;
+    }
+}
+@media (max-width: 480px) {
+    .contained h1{
+        font-size: 1.5rem;
+    }
+    .contained h2{
+        font-size: 1.5rem;
+    }
+}
